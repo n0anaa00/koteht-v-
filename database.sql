@@ -7,10 +7,9 @@ create table category (
     id int primary key auto_increment,
     name varchar(100) not null
 );
-INSERT INTO category(name) value('Kauhukirjallisuus');
-INSERT INTO category(name) value('Jännitys');
-INSERT INTO category(name) value('Romantiikka');
-INSERT INTO category(name) value('Fantasiakirjallisuus');
+INSERT INTO category(name) value('Tietokirjallisuus');
+INSERT INTO category(name) value('Fiktiokirjallisuus');
+INSERT INTO category(name) value('Lastenkirjallisuus');
 
 
 CREATE TABLE kirja (
