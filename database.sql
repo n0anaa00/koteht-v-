@@ -64,9 +64,9 @@ CREATE TABLE asiakas (
     );
 
 
-INSERT INTO asiakas VALUES (1, 'iipi','Iida','Peltonen','Iidantie 9','33720','Tampere',112, 'n0peii00@students.oamk.fi') ;
-INSERT INTO asiakas VALUES (2, 'speedy','Speedy','Keinonen','Hornantie 666','38300','Mänttä',0401234556, 'speedy@speedy.fi') ;
-INSERT INTO asiakas VALUES (3, 'seppo','Seppo','Taalasmaa','Tie 6','35300','Turku',0404567892, 'seppo@salkkarit.fi') ;
+INSERT INTO asiakas VALUES (1, 'peltsi','Pera','Järvinen','Raatteentie 8','88900','Kuhmo',0401230432, 'pera@roudarit.fi') ;
+INSERT INTO asiakas VALUES (2, 'mikko','Mikko','Aho','Puistokatu 68','91500','Muhos',0403213321, 'mikko@talkkarit.fi') ;
+INSERT INTO asiakas VALUES (3, 'kille','Kimmo','Revontuli','Umpikuja 33','93100','Pudasjärvi',040765657, 'kille@hemmot.fi') ;
 
 
 

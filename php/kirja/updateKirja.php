@@ -3,7 +3,7 @@ require_once '../../inc/headers.php';
 require_once '../../inc/functions.php';
 
 $input = json_decode(file_get_contents('php://input'));
-//sanitoidaan inputit
+
 $kirjaid = filter_var($input->kirjaid,FILTER_SANITIZE_NUMBER_INT);
 $kirjanimi = filter_var($input->kirjanimi,FILTER_SANITIZE_STRING);
 $kirjailija = filter_var($input->kirjailija,FILTER_SANITIZE_STRING);
@@ -16,12 +16,7 @@ $saldo = filter_var($input->saldo,FILTER_SANITIZE_NUMBER_INT);
 $kuva = filter_var($input->kuva,FILTER_SANITIZE_STRING);
 $category_id = filter_var($input->category_id,FILTER_SANITIZE_NUMBER_INT); 
 
-//avataan tietokantaan yhteys
-//Valmistellaan sql-lause, jossa päivitetään kirjan tiedot
-//Parametrisoidaan
-//Viedään tiedot tietokantaan
-//Palautetaan 200 OK
-//jos menee catchiin, palautetaan error
+
 
 try {
     $db= openDb();

@@ -3,9 +3,7 @@
 require_once '../../inc/functions.php';
 require_once '../../inc/headers.php';
 
-//avataan tietokantaan yhteys
-//Suoritetaan selectAsJson-funktio, jonka avulla haetaan kaikki tilaukset ja tilausrivit kannasta
-//jos menee catchiin, palautetaan error
+
 
 try {
     $db = openDb();
