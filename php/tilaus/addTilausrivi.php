@@ -3,6 +3,8 @@
 require_once '../../inc/headers.php';
 require_once '../../inc/functions.php';
 
+
+
 $input = json_decode(file_get_contents('php://input'));
 
 $tilausnro = filter_var($input->tilausnro,FILTER_SANITIZE_NUMBER_INT);

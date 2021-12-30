@@ -5,6 +5,7 @@ require_once '../../inc/headers.php';
 
 
 
+
 try {
     $db = openDb();
     selectAsJson($db, "SELECT tilaus.tilausnro, tilaus.asid, asiakas.astunnus,

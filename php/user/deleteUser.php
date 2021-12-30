@@ -8,6 +8,8 @@ $input = json_decode(file_get_contents('php://input'));
 $userid = filter_var($input->userid,FILTER_SANITIZE_NUMBER_INT);
 
 
+
+
 try {
     $db= openDb();
     $query = $db->prepare('delete from user where userid=(:userid)');

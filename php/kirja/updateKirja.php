@@ -4,6 +4,9 @@ require_once '../../inc/functions.php';
 
 $input = json_decode(file_get_contents('php://input'));
 
+
+
+
 $kirjaid = filter_var($input->kirjaid,FILTER_SANITIZE_NUMBER_INT);
 $kirjanimi = filter_var($input->kirjanimi,FILTER_SANITIZE_STRING);
 $kirjailija = filter_var($input->kirjailija,FILTER_SANITIZE_STRING);

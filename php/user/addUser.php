@@ -4,6 +4,8 @@ require_once '../../inc/functions.php';
 
 $input = json_decode(file_get_contents('php://input'));
 
+
+
 $firstname = filter_var($input->firstname,FILTER_SANITIZE_STRING);
 $lastname = filter_var($input->lastname,FILTER_SANITIZE_STRING);
 $username = filter_var($input->username,FILTER_SANITIZE_STRING);

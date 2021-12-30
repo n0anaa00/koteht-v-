@@ -10,6 +10,8 @@ $lastname = filter_var($input->lastname,FILTER_SANITIZE_STRING);
 $username = filter_var($input->username,FILTER_SANITIZE_STRING);
 $password = filter_var($input->password,FILTER_SANITIZE_STRING);
 
+
+
 try {
     $db= openDb();
     $query = $db->prepare('update user set userid=:userid,firstname=:firstname, lastname=:lastname, 

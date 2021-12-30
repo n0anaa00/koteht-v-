@@ -10,6 +10,8 @@ $kpl = filter_var($input->kpl,FILTER_SANITIZE_NUMBER_INT);
 
 
 
+
+
 try {
     $db= openDb();
     $query = $db->prepare('update tilausrivi set kpl=:kpl 

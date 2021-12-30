@@ -3,15 +3,19 @@
 require_once '../../inc/headers.php';
 require_once '../../inc/functions.php';
 
+
+
+
 $input = json_decode(file_get_contents('php://input'));
-$astunnus = filter_var($input->astunnus,FILTER_SANITIZE_STRING);
-$asetunimi = filter_var($input->asetunimi,FILTER_SANITIZE_STRING);
-$assukunimi = filter_var($input->assukunimi,FILTER_SANITIZE_STRING);
+
 $asosoite = filter_var($input->asosoite,FILTER_SANITIZE_STRING);
 $postinro = filter_var($input->postinro,FILTER_SANITIZE_NUMBER_INT);
 $postitmp  = filter_var($input->postitmp,FILTER_SANITIZE_STRING);
 $puhelin = filter_var($input->puhelin,FILTER_SANITIZE_NUMBER_INT);
 $email = filter_var($input->email,FILTER_SANITIZE_STRING);
+$assukunimi = filter_var($input->assukunimi,FILTER_SANITIZE_STRING);
+$asetunimi = filter_var($input->asetunimi,FILTER_SANITIZE_STRING);
+$astunnus = filter_var($input->astunnus,FILTER_SANITIZE_STRING);
 
 try {
     $db= openDb();    
